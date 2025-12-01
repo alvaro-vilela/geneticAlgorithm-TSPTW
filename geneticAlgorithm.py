@@ -4,7 +4,7 @@ from random import randint
 from copy import deepcopy
 from utils import Calculate_cost
 import matplotlib.pyplot as plt
-from heuristics import route_Closest_Neighbour, route_Clarke_Wright, route_Nearest_Insertion, two_opt
+from heuristics import route_Closest_Neighbour, route_Nearest_Insertion
 import time
 
 def Generate_random_route(n):

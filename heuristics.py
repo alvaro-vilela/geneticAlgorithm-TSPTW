@@ -2,7 +2,6 @@ import random
 import numpy as np
 from utils import Calculate_cost
 
-
 # Closest Neighbour
 
 def closest_neighbour(n, dist, dmax, v, visited)    : #retourne le plus proche sommet non visité à 'v'
@@ -55,7 +54,7 @@ def route_Closest_Neighbour(n, dist, a, b, dmax, pen, root):
     # print(f"Tournée avec PPV : {tour}")
     return distance,cost,tour
 
-"""### Clarke & Wright"""
+# Clarke & Wright
 
 def route_Clarke_Wright(n, dist, root=0):
   tours = {i: [i] for i in range(n) if i != root}
@@ -100,7 +99,7 @@ def route_Clarke_Wright(n, dist, root=0):
 
   return distance, final_tour
 
-"""### Meilleur insertion"""
+# Nearest insertion
 
 def route_Nearest_Insertion(n, dist, a, b, pen, dmax):
     route = []
@@ -128,7 +127,7 @@ def route_Nearest_Insertion(n, dist, a, b, pen, dmax):
         visited[i_] = True
     return route
 
-"""### 2-Opt optimization"""
+# 2-Opt optimization
 
 def reverseArray(arr,start, end):
   while start < end:

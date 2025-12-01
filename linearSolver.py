@@ -66,8 +66,8 @@ def LinMod(n, pen, dist, dmax, a, b):
       for j in range(n):
           if model.getSolVal(sol,x[i,j])>0.99:
               succ[i]=j
-              print(i,"->",j)
-  print(f'Cost of the optimal route : {model.getSolObjVal(sol):.2f}')
+              # print(i,"->",j)
+  print(f'Cost of the route found with linear solver (time limit of 5 min): {model.getSolObjVal(sol):.2f}')
 
   route = np.zeros(n+1, dtype=int)
   current_node = succ[0]

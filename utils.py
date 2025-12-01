@@ -67,7 +67,6 @@ def Calculate_distance(dist, route):
 
   for i in range(1,len(route)):
     distance += dist[route[i-1]][route[i]]
-
   return distance
 
 def Calculate_cost(dist, a, b, pen, route):

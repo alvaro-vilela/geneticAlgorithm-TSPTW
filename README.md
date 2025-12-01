@@ -71,7 +71,7 @@ The instances for this study consist on excel files containing the x and y coord
  - The warehouse is indexed by 0, i.e. Row 0 represents the warehouse, not a client. 
 
 ##### Example:
-vertice | coord_x | coord_y | a | b | latenesse penalty |
+vertice | coord_x | coord_y | a | b | lateness penalty |
 --- | --- | --- | --- |--- |--- |
 0 | 35 | 35 | 0 | 10000 | 0 | 
 1 | 41 | 49 | 161 | 171 | 1 | 
