@@ -155,4 +155,4 @@ def GA(POP_SIZE, GENERATIONS, TOURNAMENT_SIZE, PROB_MUTATION, n, dist, a, b, pen
   run_time = end_time - start_time
   print(f"Running time : {round(run_time, 3)} s")
 
-  return best_fitness, best_individual, cumulated_best_fitness, generation_best_fitness, generations
+  return best_fitness, best_individual, cumulated_best_fitness, generation_best_fitness, generations, run_time

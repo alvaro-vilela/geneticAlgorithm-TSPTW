@@ -77,4 +77,4 @@ def LinMod(n, pen, dist, dmax, a, b):
 
   print("Optimal route : ", route)
 
-  return model.getSolObjVal(sol), succ, route
+  return model.getSolObjVal(sol), succ, route, model.getSolvingTime()
